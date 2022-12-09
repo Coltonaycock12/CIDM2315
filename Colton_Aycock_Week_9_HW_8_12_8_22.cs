@@ -15,8 +15,8 @@ class Program
     static void PrintAllOddNumber(int[,] array_2d)
     {
         int n = 3;
-        for(int i = 0; i<n;i++)
-        for(int j = 0; j<n;j++){
+        for(int i = 0;i<n;i++)
+        for(int j = 0;j<n;j++){
             if (array_2d[i,j]%2 == 1)
             Console.Write($"{array_2d[i,j]} "); 
         }
@@ -26,8 +26,8 @@ class Program
     {
         int t = 0;
         int n = 3;
-        for(int i = 0; i<n;i++){
-        for(int j = 0; j<n;j++)
+        for(int i = 0;i<n;i++){
+        for(int j = 0;j<n;j++)
         {
             t = t + array_2d[i,j];
         }
@@ -39,8 +39,8 @@ class Program
     {
         int[,] newArray = {{0,0,0},{0,0,0},{0,0,0}} ;
         int n = 3;
-        for(int i = 0; i<n;i++){
-        for(int j = 0; j<n;j++)
+        for(int i = 0;i<n;i++){
+        for(int j = 0;j<n;j++)
         {
             newArray[i,j] = array_2d[i,j]*2; 
         }}
@@ -56,10 +56,10 @@ class Program
         PrintAllOddNumber(array_2d); 
         Console.WriteLine($"Q2: The sum of array elements: {ElementSum(array_2d)}");
         Console.WriteLine("Q3: The new 2d array:");
-        int [,] newArr = DoubleArray(array_2d); 
-        for(int i = 0; i<3;i++)
-        {for(int j = 0; j<3;j++){
-            Console.Write(newArr[i,j] + " ");
+        int [,] newArray = DoubleArray(array_2d); 
+        for(int i = 0;i<3;i++)
+        {for(int j = 0;j<3;j++){
+            Console.Write(newArray[i,j] + " "); 
         }
         }
     }
